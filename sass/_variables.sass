@@ -1,6 +1,8 @@
 $primary-color:#333333
 $secondary-color: #E57D22
-
+li
+    list-style: none
+    margin: 2rem 0 0 3rem
 
 .title1
     font-size: 2rem
@@ -12,7 +14,12 @@ $secondary-color: #E57D22
 .title-big
     font-size: 5rem
     font-weight: bold
-
+.text-back
+    display: inline
+    font-weight: bold
+    padding: .5rem 1rem
+    border-radius: 1rem
+    background-color: #94D82D
 
 .number
     color: #DDDDDD
@@ -31,6 +38,19 @@ $secondary-color: #E57D22
             background-color: #cf711f
         &:active
             border: .7rem solid $secondary-color
+.secondary-button
+        display: inline-block
+        
+        color: $secondary-color
+        font-size: 2rem
+        transition: 0.6s
+        border-bottom: .1rem solid $secondary-color
+        &:hover
+            border-bottom: none
+            color: #cf711f
+.makeToCenter
+    text-align: center
+        
 .learn-more
         color: #777
         padding: 1rem 3rem
