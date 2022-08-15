@@ -1,0 +1,150 @@
+.title1 {
+  font-size: 2rem;
+  color: #777;
+  font-weight: 400;
+}
+
+.main-button {
+  color: white !important;
+  padding: 1rem 3rem;
+  background-color: #E57D22;
+  border-radius: 0.8rem;
+  transition: 0.6s;
+  font-size: 2rem;
+}
+.main-button:hover {
+  background-color: #cf711f;
+}
+.main-button:active {
+  border: 0.7rem solid #E57D22;
+}
+
+.learn-more {
+  color: #777;
+  padding: 1rem 3rem;
+  font-weight: bold;
+  border-radius: 0.8rem;
+  transition: 0.6s;
+  font-size: 2rem;
+}
+.learn-more:active {
+  border: 0.7rem solid #E57D22;
+}
+
+.title1 {
+  font-size: 2rem;
+  color: #777;
+  font-weight: 400;
+}
+
+.main-button {
+  color: white !important;
+  padding: 1rem 3rem;
+  background-color: #E57D22;
+  border-radius: 0.8rem;
+  transition: 0.6s;
+  font-size: 2rem;
+}
+.main-button:hover {
+  background-color: #cf711f;
+}
+.main-button:active {
+  border: 0.7rem solid #E57D22;
+}
+
+.learn-more {
+  color: #777;
+  padding: 1rem 3rem;
+  font-weight: bold;
+  border-radius: 0.8rem;
+  transition: 0.6s;
+  font-size: 2rem;
+}
+.learn-more:active {
+  border: 0.7rem solid #E57D22;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+}
+.nav__logo img {
+  width: 17rem;
+}
+.nav__links a {
+  font-size: 1.8rem;
+  color: #333333;
+  font-weight: bold;
+  margin-right: 3rem;
+  transition: 0.6s;
+}
+.nav__links a:hover {
+  color: #E57D22;
+}
+.nav__links a:active {
+  border: 0.7rem solid #E57D22;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 5.5rem;
+  padding-bottom: 3rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 6rem;
+  justify-items: center;
+  align-items: center;
+}
+.header__left {
+  grid-column: 1/2;
+}
+.header__left h3 {
+  margin-bottom: 7rem;
+}
+.header__right {
+  display: flex;
+  justify-content: flex-end;
+}
+.header__feedback {
+  padding-top: 10rem;
+  display: flex;
+}
+.header__feedback_people img {
+  border-radius: 100%;
+  border: 0.5rem solid white;
+  width: 15%;
+}
+.header__feedback_info span {
+  color: #E57D22;
+}
+.header__feedback_info h3 {
+  font-weight: bold;
+  margin: 0;
+}
+.header .img-hero {
+  width: 90%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #FDF2E9;
+}/*# sourceMappingURL=style.css.map */
