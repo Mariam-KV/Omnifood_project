@@ -4,6 +4,26 @@
   font-weight: 400;
 }
 
+.title2 {
+  font-size: 2rem;
+  color: #E57D22;
+}
+
+.title-big {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.number {
+  color: #DDDDDD;
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+.app-title {
+  font-size: 3rem;
+}
+
 .main-button {
   color: white !important;
   padding: 1rem 3rem;
@@ -35,6 +55,26 @@
   font-size: 2rem;
   color: #777;
   font-weight: 400;
+}
+
+.title2 {
+  font-size: 2rem;
+  color: #E57D22;
+}
+
+.title-big {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.number {
+  color: #DDDDDD;
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+.app-title {
+  font-size: 3rem;
 }
 
 .main-button {
@@ -128,6 +168,98 @@ h1 {
 }
 .header .img-hero {
   width: 90%;
+}
+
+.title1 {
+  font-size: 2rem;
+  color: #777;
+  font-weight: 400;
+}
+
+.title2 {
+  font-size: 2rem;
+  color: #E57D22;
+}
+
+.title-big {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.number {
+  color: #DDDDDD;
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+.app-title {
+  font-size: 3rem;
+}
+
+.main-button {
+  color: white !important;
+  padding: 1rem 3rem;
+  background-color: #E57D22;
+  border-radius: 0.8rem;
+  transition: 0.6s;
+  font-size: 2rem;
+}
+.main-button:hover {
+  background-color: #cf711f;
+}
+.main-button:active {
+  border: 0.7rem solid #E57D22;
+}
+
+.learn-more {
+  color: #777;
+  padding: 1rem 3rem;
+  font-weight: bold;
+  border-radius: 0.8rem;
+  transition: 0.6s;
+  font-size: 2rem;
+}
+.learn-more:active {
+  border: 0.7rem solid #E57D22;
+}
+
+.app-header {
+  text-align: center;
+}
+
+.application {
+  padding: 10rem;
+}
+.application__logo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  padding: 2rem 5rem 0;
+  justify-items: center;
+  align-items: center;
+  column-gap: 6rem;
+}
+.application__logo img {
+  width: 100%;
+}
+.application__info {
+  padding-top: 12rem;
+}
+.application__feature {
+  padding: 10rem 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.application__feature p {
+  padding-top: 3rem;
+}
+.application__feature_right {
+  display: flex;
+  justify-content: center;
+}
+.application__feature_right img {
+  width: 50%;
 }
 
 * {
