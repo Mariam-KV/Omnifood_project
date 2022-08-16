@@ -734,6 +734,21 @@ li {
   width: 3rem;
   margin-right: 1rem;
 }
+.PRICING__footer {
+  padding-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-column-gap: 5rem;
+}
+.PRICING__footer i {
+  color: #E57D22;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.PRICING__footer .title1 {
+  line-height: 3rem;
+  margin-top: 1rem;
+}
 
 * {
   margin: 0;
