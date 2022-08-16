@@ -5,6 +5,10 @@
     display: grid
     grid-template-columns: repeat(3,1fr)
     column-gap: 5rem
+    svg
+        color: $secondary-color
+        width: 3rem
+        margin-right: 1rem
     &__header
         text-align: center
     &__card
@@ -15,7 +19,7 @@
         cursor: pointer
         &:hover
             transform: translateY(-2rem)
-            box-shadow: .2rem .2rem 1.5rem gray
+            box-shadow: .2rem .2rem 1.5rem #b3b2b2
         img
             width: 100%
             border-start-end-radius: 1rem
