@@ -1,9 +1,10 @@
 @import "_variables.sass"
 
 .TESTIMONIALS
-    padding: 20rem 5rem
+    padding: 20rem 0
     display: grid
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: repeat(auto-fit,minmax(50rem ,1fr))
+    grid-gap: 5rem
     grid-column-gap: 7rem
     &__left_down
         padding-top: 10rem

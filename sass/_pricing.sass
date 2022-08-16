@@ -1,13 +1,15 @@
 @import "_variables.sass"
 
 .PRICING
-    padding:  0 10rem
     .t
         text-align: center
     &__card
-        padding: 12rem 20rem 7rem
+        padding: 12rem 0  7rem
         display: grid
-        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr))
+
+        grid-template-columns: repeat(auto-fit,minmax(35rem,1fr))
+        row-gap: 5rem
+        justify-content: center
         justify-items: center
         .title2
             text-align: center
@@ -27,6 +29,7 @@
         padding-top: 10rem
         display: grid
         grid-template-columns: repeat(auto-fit,minmax(20rem,1fr))
+        row-gap: 5rem
         grid-column-gap: 5rem
         i
             color: $secondary-color

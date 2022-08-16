@@ -2,7 +2,7 @@
 .nav
     display: flex
     justify-content: space-between
-    padding: 4rem
+    padding: 4rem 0
     &__logo img
         width: 17rem
     &__links 
@@ -27,11 +27,16 @@ h1
     padding-bottom: 3rem
 .header
     display: grid
-    grid-template-columns: 1fr 1fr
-    padding: 6rem
+    grid-template-columns: repeat(auto-fit,minmax(40rem,1fr))
+    padding: 6rem 0
+    column-gap: 6rem
     justify-items: center
     align-items: center
-
+    .buttons
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr))
+        a
+            display: inline-block
     &__left
         grid-column: 1/2
         h3
@@ -40,13 +45,24 @@ h1
         display: flex
         justify-content: flex-end
     &__feedback
-        padding-top: 10rem
-        display: flex
-        &_people img
-            border-radius: 100%
-            border: .5rem solid white
-            width: 15%
+        margin-top: 10rem
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr))
+        justify-content: center
+        text-align: center
+        &_people
+            justify-self: start 
+            .img-abs
+                margin-left: -3rem
+                
+            img
+                border-radius: 100%
+                border: .5rem solid white
+                width: 6rem
+                
+
         &_info
+            margin-top: 1rem
             span
                 color: $secondary-color
             h3

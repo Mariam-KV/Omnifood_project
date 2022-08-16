@@ -4,6 +4,7 @@
 @import "_meals.sass"
 @import "_TESTIMONIALS.sass"
 @import "_pricing.sass"
+@import "_footer.sass"
 
 
     
@@ -19,4 +20,24 @@ body
     font-family: 'Rubik', sans-serif
     background-color: #FDF2E9
     color: #343a40
+.container
+    padding: 0 10rem
 
+@media (max-width: 1060px)
+    .header__right
+        margin-top: 10rem
+        justify-content: center
+
+
+@media (max-width: 900px)
+        .container 
+            padding: 0 3rem
+
+        .header__feedback_people
+            justify-self: center
+@media (max-width: 500px)
+    .application
+        padding: 10rem 0
+    .title-big,h1,.number
+        font-size: 3.5rem
+    
