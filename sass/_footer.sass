@@ -13,24 +13,55 @@
         border-bottom-right-radius: 1rem
         border-top-right-radius: 1rem
     .title
-        padding-top: 3rem
+        padding-bottom: 1rem
         line-height: 3rem
         font-size: 2rem 
     form
         padding: 5rem
+       
+        
     label
         padding-bottom: 1rem
+    .select
+        padding: 1rem 2rem
+        font-size: 2rem
+        width: 100%
+        border: none
+        border-radius: 1rem
+        margin-top: 1rem
+
     .inputs
-        padding-top: 3rem
+        padding: 3rem 
         display: grid
-        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr)) 
+        grid-template-columns: 1fr 1fr
+        gap: 5rem
+        
+        &__button
+            border: none
+            padding: 1rem 3rem
+            background-color: #45260A
+            font-size: 2rem
+            color: white
+            border-radius: 1rem
+            transition: .6s
+            display: inline-block
+            width: 100%
+            cursor: pointer
+            align-self: end
+            &:hover
+                color: grey
+                background-color: white
         .input
             display: flex
             flex-direction: column
+            width: 100%
         input
             padding: 1rem 3rem
             border-radius: 1rem
             border: none
             font-size: 2rem
-            max-width: 30rem
-  
+            
+
+*:focus
+        outline: none
+        box-shadow: .1rem .1rem 1rem white

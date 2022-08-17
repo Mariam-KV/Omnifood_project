@@ -697,16 +697,32 @@
           <div class="inputs">
             <div class="input">
               <label for="name" class="title">Full Name</label>
-              <input type="text" placeholder="John Smith" id="name" />
+              <input type="text" required placeholder="John Smith" id="name" />
             </div>
             <div class="input">
               <label for="email" class="title">Email address</label>
               <input
-                type="text"
+                type="email"
+                required
                 placeholder="JohnSmith@example.com"
                 id="email"
               />
             </div>
+
+            <div>
+              <label for="select" class="title"
+                >Where did you hear from us?</label
+              >
+              <select class="select" id="select">
+                <option value="1">Friends and family</option>
+                <option value="1">Youtube video</option>
+                <option value="1">Facebook ad</option>
+                <option value="1">Others</option>
+                <option value="1">Please choose one option:</option>
+              </select>
+            </div>
+
+            <button class="inputs__button">Sign up now</button>
           </div>
         </form>
         <div class="form__img"></div>
