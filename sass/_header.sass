@@ -26,15 +26,15 @@ h1
     line-height: 5.5rem
     padding-bottom: 3rem
 .header
+    max-width: 130rem
     display: grid
-    grid-template-columns: repeat(auto-fit,minmax(40rem,1fr))
+    grid-template-columns: repeat(2,1fr)
     padding: 6rem 0
-    column-gap: 6rem
+    gap: 5rem
     justify-items: center
     align-items: center
     .buttons
-        display: grid
-        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr))
+        
         a
             display: inline-block
     &__left
@@ -46,12 +46,12 @@ h1
         justify-content: flex-end
     &__feedback
         margin-top: 10rem
-        display: grid
-        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr))
-        justify-content: center
-        text-align: center
+        display: flex
+        
+        align-items: center
         &_people
-            justify-self: start 
+            display: inline-block
+            
             .img-abs
                 margin-left: -3rem
                 
@@ -63,10 +63,13 @@ h1
 
         &_info
             margin-top: 1rem
+            .title
+                display: inline-block
             span
                 color: $secondary-color
+                margin-left: 2rem
             h3
                 font-weight: bold
                 margin: 0
     .img-hero
-        width: 90%
+        max-width: 50rem

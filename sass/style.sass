@@ -5,7 +5,7 @@
 @import "_TESTIMONIALS.sass"
 @import "_pricing.sass"
 @import "_footer.sass"
-
+@import "_links.sass"
 
     
 *
@@ -25,13 +25,16 @@ body
 
 @media (max-width: 1060px)
     .header__right
-        margin-top: 10rem
+    
         justify-content: center
+    .container 
+            padding: 0 2rem
 
 
-@media (max-width: 900px)
-        .container 
-            padding: 0 3rem
+@media (max-width: 1000px)
+        
+        .header
+            grid-template-columns: 1fr
 
         .header__feedback_people
             justify-self: center
@@ -41,3 +44,8 @@ body
     .title-big,h1,.number
         font-size: 3.5rem
     
+@media (max-width: 550px)
+    .TESTIMONIALS__left_down
+        grid-template-columns: minmax(10rem ,1fr)
+    .TESTIMONIALS__right
+        grid-template-columns: minmax(10rem ,1fr)
