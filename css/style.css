@@ -177,7 +177,7 @@ li {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 0;
+  padding: 4rem;
   align-items: center;
 }
 .nav__logo img {
@@ -368,7 +368,7 @@ li {
   row-gap: 3rem;
 }
 .application__logo img {
-  width: 100%;
+  width: 70%;
 }
 .application__info {
   padding-top: 12rem;
@@ -620,7 +620,7 @@ li {
 }
 
 .TESTIMONIALS {
-  padding: 20rem 0;
+  padding: 20rem 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   grid-gap: 5rem;
@@ -746,6 +746,11 @@ li {
   border: 0.7rem solid #E57D22;
 }
 
+.PRICING ion-icon {
+  color: #E57D22;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
 .PRICING .t {
   text-align: center;
 }
@@ -785,26 +790,25 @@ li {
   display: inline-block;
   margin: 3rem 0 0 3rem;
 }
-.PRICING__card svg {
-  color: #E57D22;
-  width: 3rem;
-  margin-right: 1rem;
-}
 .PRICING__footer {
-  padding-top: 10rem;
+  padding-top: 10rem !important;
+  padding-bottom: 10rem !important;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   row-gap: 5rem;
-  grid-column-gap: 5rem;
+  column-gap: 5rem;
 }
-.PRICING__footer i {
-  color: #E57D22;
-  font-size: 4rem;
+.PRICING__footer ion-icon {
+  font-size: 5rem;
   margin-bottom: 2rem;
 }
 .PRICING__footer .title1 {
   line-height: 3rem;
   margin-top: 1rem;
+}
+
+.first {
+  align-self: center;
 }
 
 li {
@@ -1056,7 +1060,7 @@ li {
 }
 
 .links {
-  padding: 10rem 0;
+  padding: 10rem 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   justify-items: center;

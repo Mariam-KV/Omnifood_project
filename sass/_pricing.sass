@@ -1,6 +1,10 @@
 @import "_variables.sass"
 
 .PRICING
+    ion-icon
+            color: $secondary-color
+            font-size: 3rem
+            margin-right: 1rem
     .t
         text-align: center
     &__card
@@ -35,21 +39,20 @@
         a
             display: inline-block
             margin: 3rem 0  0 3rem
-        svg
-            color: $secondary-color
-            width: 3rem
-            margin-right: 1rem
+        
     &__footer
-        padding-top: 10rem
+        padding-top: 10rem !important
+        padding-bottom: 10rem !important
         display: grid
         grid-template-columns: repeat(auto-fit,minmax(20rem,1fr))
         row-gap: 5rem
-        grid-column-gap: 5rem
-        i
-            color: $secondary-color
-            font-size: 4rem
+        column-gap: 5rem
+        
+        ion-icon
+            font-size: 5rem
             margin-bottom: 2rem
         .title1
             line-height: 3rem
             margin-top: 1rem
-        
+.first
+    align-self: center
