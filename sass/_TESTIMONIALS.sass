@@ -7,7 +7,7 @@
     grid-gap: 5rem
     grid-column-gap: 7rem
     &__left_down
-        padding-top: 10rem
+        padding-top: 5rem
         display: grid
         grid-template-columns: 1fr 1fr
         grid-gap: 5rem
@@ -22,6 +22,7 @@
         img
             width: 7rem
             border-radius: 100%
+        
     &__right
         display: grid
         grid-template-columns: repeat(3,1fr)
@@ -29,3 +30,7 @@
         
         img
             max-width: 100%
+            cursor: pointer
+        img:hover
+                transform: translate(1.6)
+                
