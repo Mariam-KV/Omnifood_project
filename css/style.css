@@ -1103,6 +1103,56 @@ li {
   color: #333333;
 }
 
+.menu-nav, .close-nav {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .main_nav_list {
+    display: none;
+  }
+  .menu-nav {
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 5rem;
+    display: block;
+  }
+}
+.hide .menu-nav {
+  display: none;
+}
+.hide .close-nav {
+  display: block;
+  position: absolute;
+  right: 3rem;
+  font-size: 5rem;
+  top: 3rem;
+}
+.hide .nav__logo {
+  display: none;
+}
+.hide .main_nav_list {
+  display: block;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.hide .main_nav_list a {
+  font-size: 3rem;
+}
+
 * {
   margin: 0;
   padding: 0;
