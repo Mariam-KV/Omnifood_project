@@ -4,8 +4,8 @@
     padding: 20rem 5rem
     display: grid
     grid-template-columns: repeat(auto-fit,minmax(50rem ,1fr))
-    grid-gap: 5rem
-    grid-column-gap: 7rem
+    grid-gap: 3rem
+    align-items: center
     &__left_down
         padding-top: 5rem
         display: grid
@@ -27,10 +27,14 @@
         display: grid
         grid-template-columns: repeat(3,1fr)
         grid-gap: 2rem
+        transition: .4s
         
         img
             max-width: 100%
             cursor: pointer
+            
         img:hover
-                transform: translate(1.6)
+                transform: scale(1.2)
                 
+.gallery-img
+    overflow: hidden

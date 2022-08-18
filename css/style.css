@@ -213,6 +213,11 @@ h1 {
   justify-items: center;
   align-items: center;
 }
+.header .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 .header .buttons a {
   display: inline-block;
 }
@@ -229,6 +234,7 @@ h1 {
 .header__feedback {
   margin-top: 10rem;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .header__feedback_people {
@@ -493,6 +499,15 @@ li {
   border: 0.7rem solid #E57D22;
 }
 
+.add {
+  padding-top: 15rem !important;
+}
+
+.add2 {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
 .meals {
   padding: 10rem 0;
   padding-bottom: 5rem;
@@ -623,8 +638,8 @@ li {
   padding: 20rem 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
-  grid-gap: 5rem;
-  grid-column-gap: 7rem;
+  grid-gap: 3rem;
+  align-items: center;
 }
 .TESTIMONIALS__left_down {
   padding-top: 5rem;
@@ -649,13 +664,18 @@ li {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  transition: 0.4s;
 }
 .TESTIMONIALS__right img {
   max-width: 100%;
   cursor: pointer;
 }
 .TESTIMONIALS__right img:hover {
-  transform: translate(1.6);
+  transform: scale(1.2);
+}
+
+.gallery-img {
+  overflow: hidden;
 }
 
 li {
@@ -755,16 +775,20 @@ li {
   text-align: center;
 }
 .PRICING__card {
-  padding: 12rem 0 7rem;
+  padding: 7rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  row-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, min-content));
+  gap: 5rem;
   justify-content: center;
   justify-items: center;
 }
 .PRICING__card_right {
+  padding: 2rem;
   position: relative;
   overflow: hidden;
+}
+.PRICING__card_left {
+  padding: 2rem;
 }
 .PRICING__card .title2 {
   text-align: center;
@@ -900,17 +924,15 @@ li {
 }
 
 .footer {
-  margin: 10rem 0;
+  padding: 0 !important;
+  max-width: 100%;
   color: #45260A;
   background-color: #E57D22;
-  border-radius: 1rem;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
 }
 .footer .form__img {
   background: url("../content/img/eating.jpg") center/cover no-repeat;
-  border-bottom-right-radius: 1rem;
-  border-top-right-radius: 1rem;
 }
 .footer .title {
   padding-bottom: 1rem;
@@ -918,7 +940,7 @@ li {
   font-size: 2rem;
 }
 .footer form {
-  padding: 5rem;
+  padding: 3rem;
 }
 .footer label {
   padding-bottom: 1rem;
@@ -1097,7 +1119,7 @@ a {
 
 body {
   font-family: "Rubik", sans-serif;
-  background-color: #FDF2E9;
+  background-color: #fcf6f1;
   color: #343a40;
 }
 
@@ -1111,13 +1133,31 @@ body {
   .header__right {
     justify-content: center;
   }
-}
-@media (max-width: 1000px) {
-  .header {
+  .header__left {
+    padding: 0 8rem;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .inputs {
+    margin: 0 2rem;
+    grid-template-columns: 1fr !important;
+  }
+  .inputs__button {
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+  html {
+    font-size: 50%;
+  }
+  html .header {
     grid-template-columns: 1fr;
   }
-  .header__feedback_people {
+  html .header__feedback_people {
     justify-self: center;
+  }
+  .header .img-hero {
+    width: 70%;
   }
 }
 @media (max-width: 500px) {
@@ -1129,8 +1169,8 @@ body {
   }
 }
 @media (max-width: 550px) {
-  html {
-    font-size: 50%;
+  .header__left {
+    padding: 0;
   }
   .TESTIMONIALS {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -1140,5 +1180,10 @@ body {
   }
   .TESTIMONIALS__right {
     grid-template-columns: minmax(10rem, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
