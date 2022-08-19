@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
   </head>
   <body>
     <div>
@@ -23,11 +22,13 @@
 
         <div class="nav__links" id="add">
           <div class="main_nav_list">
-            <a href="#">How it works</a>
-            <a href="#">Meals</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Pricing</a>
-            <a href="#" class="main-button">Try for free</a>
+            <a href="#works" onclick="removeFunc()">How it works</a>
+            <a href="#meals" onclick="removeFunc()">Meals</a>
+            <a href="#testi" onclick="removeFunc()">Testimonials</a>
+            <a href="#price" onclick="removeFunc()">Pricing</a>
+            <a href="#form" class="main-button" onclick="removeFunc()"
+              >Try for free</a
+            >
           </div>
           <div class="nav-buttons">
             <ion-icon
@@ -56,7 +57,7 @@
             needs.
           </h3>
           <div class="buttons">
-            <a href="#" class="main-button">Start eating well</a>
+            <a href="#form" class="main-button">Start eating well</a>
           </div>
           <div class="header__feedback">
             <div class="header__feedback_people">
@@ -90,7 +91,7 @@
           </div>
         </div>
         <div class="application__info">
-          <h4 class="title2">HOW IT WORKS</h4>
+          <h4 class="title2" id="works">HOW IT WORKS</h4>
           <h2 class="title-big">Your daily dose of health in 3 simple steps</h2>
           <div class="app">
             <div class="application__feature">
@@ -142,7 +143,7 @@
           </div>
         </div>
       </section>
-      <section class="container add">
+      <section class="container add" id="meals">
         <div class="meals__header">
           <h4 class="title2">MEALS</h4>
           <h2 class="title-big">Omnifood AI chooses from 5,000+ recipes</h2>
@@ -240,7 +241,7 @@
         </div>
       </section>
       <section class="TESTIMONIALS">
-        <div class="TESTIMONIALS__left">
+        <div class="TESTIMONIALS__left" id="testi">
           <div class="TESTIMONIALS__left_up">
             <div class="title2">TESTIMONIALS</div>
             <div class="title-big">Once you try it, you can't go back</div>
@@ -327,7 +328,7 @@
           </figure>
         </div>
       </section>
-      <section class="PRICING container">
+      <section class="PRICING container" id="price">
         <div class="PRICING__HEADER">
           <p class="title2">PRICING</p>
           <h3 class="title-big">Eating well without breaking the bank</h3>
@@ -423,7 +424,7 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
+      <footer class="footer" id="form">
         <form>
           <h3 class="title-big">Get your first meal for free!</h3>
           <p class="title">
@@ -519,6 +520,11 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
   </body>
 </html>
