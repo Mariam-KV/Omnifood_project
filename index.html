@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js"></script>
   </head>
   <body>
     <div>
@@ -20,7 +21,7 @@
           <a href="#"><img src="content\img\omnifood-logo.png" /></a>
         </div>
 
-        <div class="nav__links">
+        <div class="nav__links" id="add">
           <div class="main_nav_list">
             <a href="#">How it works</a>
             <a href="#">Meals</a>
@@ -29,8 +30,19 @@
             <a href="#" class="main-button">Try for free</a>
           </div>
           <div class="nav-buttons">
-            <ion-icon class="menu-nav" name="menu-outline"></ion-icon>
-            <ion-icon class="close-nav" name="close-outline"></ion-icon>
+            <ion-icon
+              class="menu-nav"
+              name="menu-outline"
+              id="menu"
+              onclick="addFunc()"
+            >
+            </ion-icon>
+            <ion-icon
+              class="close-nav"
+              name="close-outline"
+              id="close"
+              onclick="removeFunc()"
+            ></ion-icon>
           </div>
         </div>
       </nav>
@@ -45,7 +57,6 @@
           </h3>
           <div class="buttons">
             <a href="#" class="main-button">Start eating well</a>
-            <a href="#" class="learn-more">Learn more &#x2193;</a>
           </div>
           <div class="header__feedback">
             <div class="header__feedback_people">

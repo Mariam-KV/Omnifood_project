@@ -213,14 +213,6 @@ h1 {
   justify-items: center;
   align-items: center;
 }
-.header .buttons {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-.header .buttons a {
-  display: inline-block;
-}
 .header__left {
   grid-column: 1/2;
 }
@@ -236,9 +228,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.header__feedback_people {
-  display: inline-block;
 }
 .header__feedback_people .img-abs {
   margin-left: -3rem;
@@ -1084,14 +1073,14 @@ li {
 .links {
   padding: 10rem 4rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  justify-content: center;
   gap: 3rem;
 }
 .links__first {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .links img {
   width: 15rem;
@@ -1104,12 +1093,12 @@ li {
 }
 
 .menu-nav, .close-nav {
-  display: none;
+  opacity: 0;
 }
 
 @media (max-width: 900px) {
   .main_nav_list {
-    display: none;
+    opacity: 0;
   }
   .menu-nav {
     position: absolute;
@@ -1119,24 +1108,26 @@ li {
     background: none;
     cursor: pointer;
     font-size: 5rem;
+    opacity: 1;
     display: block;
   }
 }
 .hide .menu-nav {
-  display: none;
+  opacity: 0;
 }
 .hide .close-nav {
-  display: block;
+  cursor: pointer;
+  opacity: 1;
   position: absolute;
   right: 3rem;
   font-size: 5rem;
   top: 3rem;
 }
 .hide .nav__logo {
-  display: none;
+  opacity: 0;
 }
 .hide .main_nav_list {
-  display: block;
+  opacity: 1;
   background-color: white;
   position: absolute;
   left: 0;
@@ -1235,5 +1226,9 @@ body {
 @media (max-width: 700px) {
   .footer {
     grid-template-columns: 1fr;
+  }
+  .meals_list {
+    grid-column: 1/-1;
+    justify-self: center;
   }
 }/*# sourceMappingURL=style.css.map */
