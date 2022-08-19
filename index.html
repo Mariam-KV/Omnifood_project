@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OMNIFOOD</title>
+    <meta
+      name="description"
+      content="Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. "
+    />
+    <title>OMNIFOOD - healthy meal delivered to your door</title>
+    <link rel="icon" href="content\img\favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -96,7 +101,7 @@
           </div>
         </div>
         <div class="header__right">
-          <img src="content\img\hero.png" class="img-hero" alt="hero" />
+          <img src="content\img\hero.webp" class="img-hero" alt="hero" />
         </div>
       </header>
       <section class="application container add add2">
@@ -449,7 +454,7 @@
         </div>
       </section>
       <footer class="footer" id="form">
-        <form>
+        <form name="sign-up" netlify>
           <h3 class="title-big">Get your first meal for free!</h3>
           <p class="title">
             Healthy, tasty and hassle-free meals are waiting for you. Start
@@ -457,11 +462,11 @@
             meal is on us!
           </p>
           <div class="inputs">
-            <div class="input">
+            <div class="input" name="name">
               <label for="name" class="title">Full Name</label>
               <input type="text" required placeholder="John Smith" id="name" />
             </div>
-            <div class="input">
+            <div class="input" name="email">
               <label for="email" class="title">Email address</label>
               <input
                 type="email"
@@ -475,7 +480,7 @@
               <label for="select" class="title"
                 >Where did you hear from us?</label
               >
-              <select class="select" id="select">
+              <select class="select" id="select" name="select">
                 <option value="1">Friends and family</option>
                 <option value="1">Youtube video</option>
                 <option value="1">Facebook ad</option>
