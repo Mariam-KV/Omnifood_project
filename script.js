@@ -8,7 +8,6 @@ function removeFunc() {
   doing.classList.remove("hide");
 }
 let links = document.querySelectorAll("a");
-console.log(links);
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -17,7 +16,25 @@ links.forEach((link) => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else if (href != "#" && href.startsWith("#")) {
       let imp = document.querySelector(href);
+
       imp.scrollIntoView({ behavior: "smooth" });
     }
   });
 });
+
+let header = document.querySelector(".header");
+let observer = new IntersectionObserver(
+  function (entries) {
+    let entry = entries[0];
+    if (entry.isIntersecting === false) {
+      document.querySelector(".nav").classList.add("sticky");
+    } else {
+      document.querySelector(".nav").classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+observer.observe(header);
