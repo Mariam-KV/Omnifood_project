@@ -264,9 +264,6 @@
               </ul>
             </div>
           </div>
-          <div class="makeToCenter">
-            <a href="#" class="secondary-button">See all resipes &#x2192;</a>
-          </div>
         </div>
       </section>
       <section class="TESTIMONIALS">
@@ -363,7 +360,7 @@
           <h3 class="title-big">Eating well without breaking the bank</h3>
         </div>
         <div class="PRICING__card">
-          <div class="PRICING__card_left">
+          <div class="PRICING__card_left PRICING__card_both">
             <p class="title2">STARTER</p>
             <h3 class="title-big">$399</h3>
             <p class="title">per month. That's just $13 per meal!</p>
@@ -374,7 +371,7 @@
               </li>
               <li>
                 <ion-icon name="checkmark-outline"></ion-icon>
-                Order from 11am to 9pm
+                Order from 11am/9pm
               </li>
               <li>
                 <ion-icon name="checkmark-outline"></ion-icon>
@@ -382,11 +379,12 @@
               </li>
               <li>
                 <ion-icon name="close-outline"></ion-icon>
+                Get access to latest recipes
               </li>
             </ul>
             <a href="#form" class="main-button">Start eating well</a>
           </div>
-          <div class="PRICING__card_right">
+          <div class="PRICING__card_right PRICING__card_both">
             <p class="title2">COMPLETE</p>
             <h3 class="title-big">$649</h3>
             <p class="best title">BEST VALUE</p>
@@ -454,7 +452,12 @@
         </div>
       </section>
       <footer class="footer" id="form">
-        <form name="sign-up" netlify>
+        <form
+          name="sign-up"
+          action="https://formsubmit.co/62f01b7297bbf71032afec6967b5cbb6"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false" />
           <h3 class="title-big">Get your first meal for free!</h3>
           <p class="title">
             Healthy, tasty and hassle-free meals are waiting for you. Start
@@ -488,11 +491,13 @@
                 >Where did you hear from us?</label
               >
               <select class="select" id="select" name="select">
-                <option value="1">Friends and family</option>
-                <option value="1">Youtube video</option>
-                <option value="1">Facebook ad</option>
-                <option value="1">Others</option>
-                <option value="1">Please choose one option:</option>
+                <option value="Friends and family1">Friends and family</option>
+                <option value="Youtube video">Youtube video</option>
+                <option value="Facebook ad">Facebook ad</option>
+                <option value="Others">Others</option>
+                <option value="Please choose one option:">
+                  Please choose one option:
+                </option>
               </select>
             </div>
 
@@ -503,49 +508,9 @@
       </footer>
       <section class="links">
         <div class="links__first">
-          <a href="#"><img src="content\img\omnifood-logo.png" alt="logo" /></a>
           <p class="title">
             Copyright © 2022 by Omnifood, Inc. All rights reserved.
           </p>
-        </div>
-        <div class="links__second">
-          <p class="title1">Contact us</p>
-          <p class="title">
-            623 Harrison St., 2nd Floor, San Francisco, CA 94107
-          </p>
-          <ul class="title">
-            <li><a href="#">415-201-6370</a></li>
-            <li><a href="#">hello@omnifood.com</a></li>
-          </ul>
-        </div>
-        <div class="links__third">
-          <p class="title1">Account</p>
-
-          <ul class="title">
-            <li><a href="#">Create account </a></li>
-            <li><a href="#">Sign in</a></li>
-            <li><a href="#">iOS app</a></li>
-            <li><a href="#">Android app</a></li>
-          </ul>
-        </div>
-        <div class="links__third">
-          <p class="title1">Company</p>
-
-          <ul class="title">
-            <li><a href="#">About Omnifood</a></li>
-            <li><a href="#">For Business</a></li>
-            <li><a href="#">Cooking partners</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-        </div>
-        <div class="links__third">
-          <p class="title1">Resources</p>
-
-          <ul class="title">
-            <li><a href="#">Recipe directory</a></li>
-            <li><a href="#">Help center</a></li>
-            <li><a href="#">Privacy & terms</a></li>
-          </ul>
         </div>
       </section>
     </div>

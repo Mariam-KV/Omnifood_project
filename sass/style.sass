@@ -5,7 +5,7 @@
 @import "_TESTIMONIALS.sass"
 @import "_pricing.sass"
 @import "_footer.sass"
-@import "_links.sass"
+
 @import "_nav.sass"
 
     
@@ -60,7 +60,10 @@ body
     .header .img-hero 
             width: 70%
 
-        
+
+.links
+    text-align: right
+    padding: 1.5rem   1rem 1rem     
 @media (max-width: 500px)
     .application
         padding: 10rem 0
@@ -76,7 +79,7 @@ body
     .TESTIMONIALS__left_down
         grid-template-columns: minmax(10rem ,1fr)
     .TESTIMONIALS__right
-        grid-template-columns: minmax(10rem ,1fr)
+        grid-template-columns: repeat(2,1fr)
     .application__feature 
         grid-template-columns: 1fr
     .transform
@@ -84,13 +87,25 @@ body
             grid-row: 1/2
         .application__feature_right
             grid-row: 2/3
+    
+@media (max-width: 400px)
+ 
 
+
+    .TESTIMONIALS__right
+        grid-template-columns: repeat(1,1fr)
+    .TESTIMONIALS img
+        max-width: 35rem !important
+        max-height: 35rem !important
+        
+      
+   
 @media (max-width: 700px)
     .footer
         grid-template-columns: 1fr
         max-width: 50rem
         margin: 0 auto
-        border-radius: 1rem
+     
         .form__img
             grid-row: 1/2
             height: 50rem 
@@ -117,10 +132,7 @@ body
     img
         max-width: 18rem
         max-height: 36rem
-.meals
-    img
-        max-width: 34.5rem
-        max-height: 23rem
+
 .TESTIMONIALS
     img
         max-width: 20rem

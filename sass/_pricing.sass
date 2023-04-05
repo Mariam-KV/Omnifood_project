@@ -10,28 +10,30 @@
     &__card
         padding: 7rem 0
         display: grid
-        
+     
         grid-template-columns: repeat(auto-fit,minmax(35rem,min-content))
         gap: 5rem
         justify-content: center
         justify-items: center
+        &_both
+            border-radius: 1rem
+            border: 1px solid #ffd53bab
+            padding: 1rem 4rem 2rem
+
         &_right
-      
-            padding: 2rem
+          
             position: relative
             overflow: hidden
             
-        &_left
-         
-            padding: 2rem
+      
            
         .title2
             text-align: center
-            padding: 3rem 0
+            padding: 1rem 0
         .title-big
             text-align: center
         .title
-            padding-top: 3rem
+            padding-top: 1.5rem
         .best
             top: 2rem
             right: -4.6rem
@@ -53,7 +55,7 @@
         grid-template-columns: repeat(auto-fit,minmax(20rem,1fr))
         row-gap: 5rem
         column-gap: 5rem
-        
+  
         ion-icon
             font-size: 5rem
             margin-bottom: 2rem
